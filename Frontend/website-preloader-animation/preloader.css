@@ -1,0 +1,134 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+
+}
+
+
+/*-----------------------------------*\
+Preloader
+\*-----------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: hsl(0, 0%, 7%);
+    z-index: 9999;
+}
+
+.preloader:before {
+
+    content: 'Loading';
+    position: absolute;
+    font-size: 10em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.03);
+}
+
+.preloader_inner {
+    position: relative;
+    color: #fff;
+    font-size: 11em;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.preloader_inner:after {
+    content: '%';
+    font-size: 0.5em;
+
+}
+
+.hide {
+    opacity: 0;
+    animation: ease-out;
+    transition: .5s;
+    pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+
+    .preloader:before {
+        font-size: 12em;
+    }
+
+    .preloader_inner {
+        font-size: 16em;
+
+    }
+}
+
+/*-----------------------------------*\
+Preloader
+\*-----------------------------------*/
+
+
+header {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    height: 100vh; 
+    background: url(subtle-prism.svg) no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.container {
+    max-width: 100%;
+    height: auto;
+    min-height: 8vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Style the header title */
+h1 {
+    font-size: 24px;
+    color: #000000;
+    padding-left: 12px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style navigation links */
+nav a {
+    text-decoration: none;
+    color: #000000; /* Link color */
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: #ff9900; /* Change to your preferred link hover color */
+}
